@@ -1,1 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reegistration Form</title>
 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 40px;
+        }
+
+        main {
+            max-width: 600px;
+            margin: auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"]
+        input[type="email"]
+        input[type="date"]
+        select,
+        textarea {
+            width: 100%;
+            padding: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: vertical;
+
+        }
+
+        .option {
+            margin: 8px 0;
+        }
+
+        .option label {
+            display: inline;
+            font-weight: normal;
+            margin: 0;
+        }
+
+        .buttons {
+            margin-top: 24px;
+            text-align: center;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button[type="submit"] {
+            background-color: #333;
+            color: white;
+        }
+
+        button[type="reset"] {
+            background-color: #ddd;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <main>
+        <h1>Registratoin Form</h1>
+
+        <form action="#" method="post">
+            <label for="fullName">Full Name</label>
+            <input 
+                type="text" 
+                id="fullName" 
+                name="fullName" 
+                placeholder="Enter your full name"
+                required
+            >
+
+            <label for="email">Email</label>
+            <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                placeholder="Enter your email"
+                required
+            >
+
+            <label for="phone">Phone Number</label>
+            <input 
+                type="text" 
+                id="phone" 
+                name="phone" 
+                placeholder="Enter your phone number"
+                required
+            >
+
+            <label>Gender</label>
+
+            <div class="option">
+                <input type="radio" id="male" name="gender" value="Male" required>
+                <label for="male">Male</label>
+            </div>
+
+            <div class="option">
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+            </div>
+
+            <label>Hobbies</label>
+
+            <div class="option">
+                <input type="checkbox" id="reading" name="hobbies" value="Reading">
+                <label for="reading">Reading</label>
+            </div>
+
+            <div class="option">
+                <input type="checkbox" id="music" name="hobbies" value="Music">
+                <label for="music">Music</label>
+            </div>
+
+            <div class="option">
+                <input type="checkbox" id="sports" name="hobbies" value="Sports">
+                <label for="sports">Sports</label>
+            </div>
+
+            
+            <div class="option">
+                <input type="checkbox" id="traveling" name="hobbies" value="Traveling">
+                <label for="traveling">Traveling</label>
+            </div>
+
+            <div class="option">
+                <input type="checkbox" id="gaming" name="hobbies" value="Traveling">
+                <label for="gaming">Gaming</label>
+            </div>
+
+            <label for="birthDate">Date of Birth</label>
+            <input 
+                type="date" 
+                id="birthDate" 
+                name="birthDate"
+                required
+            >
+
+            <label for="program">Program of Study</label>
+            <select id="program" name="program" required>
+                <option value="">-- Select Program --</option>
+                <option value="Information Systems">
+                    Information Systems
+                </option>
+                <option value="Computer Science">
+                    Computer Science
+                </option>
+                <option value="Business Management">
+                    Business Management
+                </option>
+                <option value="Accounting">
+                    Accounting
+                </option>
+                <option value="Visual Communication Design">
+                    Visual Communication Design
+                </option>
+            </select>
+
+            <label for="address">Full Address</label>
+            <textarea 
+                id="address" 
+                name="address" 
+                rows="5" 
+                placeholder="Enter your full address"
+                required
+            ></textarea>
+
+            <div class="buttons">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+            
+        </form>
+    </main>
+</body>
+</html>
